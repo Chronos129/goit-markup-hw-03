@@ -44,19 +44,11 @@ img {
     margin-right: auto;
 }
 .header{
-            border: 1px #ECECEC;
+    border-bottom: 1px solid #ECECEC;
             display: flex;
             align-items: center;
             background-color: var(--primary-bg-color);
             padding: 0px 0px;
-}
-.header-portfolio {
-    border: 1px #ECECEC;
-    display: flex;
-    align-items: center;
-    background-color: var(--primary-bg-color);
-    padding: 0px 0px;
-    padding-bottom: 94px;
 }
 /* site nav */
 .site-nav {
@@ -69,7 +61,8 @@ img {
 /* Logo */
 .logo {
     display: block;
-    padding: 24px 93px 25px 0px ;
+    margin-right: 93px;
+    padding: 24px 0px 25px 0px ;
 color: #000000;
 font-family: "Raleway", sans-serif;
 
@@ -78,6 +71,7 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
 }
 .name-logo {
+    
 color: var(--accent-color);
 }
 /* Nav */
@@ -150,7 +144,7 @@ color: var(--accent-color);
 }
 /* Main */
 .section {
-    padding: 94px 0px;
+    padding: 94px 0px 0px 0px;
 }
 /* section */
 .section-tittle {
@@ -167,7 +161,7 @@ color: var(--tittle-text-color);
 /* hero */
 .hero {
 background-color: #2f303a;
-padding:  94px 0px;
+padding:  200px 0px;
 }
 .main-name {
     margin-top: 0;
@@ -226,18 +220,26 @@ color: var(--tittle-text-color);
 /* Team */
 .team-list {
     display: block;
-    display: flex;
-    padding: 94px 0px;
+    display: flex ;
     margin: 0;
+    padding-left: 0px;
 
 }
 .team-item +.team-item {
     margin-left: 30px;
 }
+.team-item {
+        background-color: #ffffff;
+
+}
+.team-card {
+    padding-top: 30px;
+}
 .works-content {
         background-color: var(--primary-bg-button-color);
 }
 .section-ours {
+    padding: 94px 0px;
     background-color: var(--primary-bg-button-color);
 }
 .name-team {
@@ -272,6 +274,9 @@ color: var(--tittle-text-color);
     border-radius: 4px;
     border: 1px solid transparent;
 }
+.button-hero {
+    padding: 10px 32px;
+}
 .button-hero.primary:hover,.button-hero.primary:focus {
     background-color: #188CE8;
 }
@@ -279,6 +284,7 @@ color: var(--tittle-text-color);
     display:inline-block ;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
     border-color: solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--accent-color);
@@ -298,10 +304,11 @@ color: var(--tittle-text-color);
     background-color: #188CE8;
 }
 .button.secondary {
+    padding: 6px 22px;
     font-family: inherit;
 background-color: var(--primary-bg-button-color);
 color: var(--tittle-text-color);
-/* margin-left: 8px; */
+
 }
 .button.secondary:nth-last-child(1n+1) {
     margin-right: 8px;
@@ -315,26 +322,32 @@ color: var(--tittle-text-color);
 /* footer */
 .footer-name {
     display: block;
-    padding-top: 60px;
-    color: var(--primary-bg-color);
+        margin-bottom: 20px;
+        color: var(--primary-bg-color);
+
+    font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 .footer {
+    padding: 60px 0px;
 background-color: #2f303a;
 }
 .footer-list {
     display: block;
     margin: 0;
-    padding: 20px 0px 60px 0px;
+    padding: 0px;
 }
 .footer-adress {
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+    margin-bottom: 9px;
 }
 .footer-adress:hover,.footer-adress:focus {
     font-size: 14px;
@@ -343,6 +356,7 @@ background-color: #2f303a;
     color: var(--accent-color) ;
 }
 .footer-map {
+    margin-bottom: 9px;
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;
@@ -376,11 +390,20 @@ background-color: #2f303a;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.portfolio-nav:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.portfolio-section {
+    padding: 94px 0px;
 }
-.portfolio .content {
-    margin: 20px 24px;
+.portfolio-nav:hover {
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+.portfolio-item{
+    flex-basis: calc(100%/3- 30px);
+}
+.content {
+    padding: 20px 24px;
+    border-bottom:1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 .portfolio-list {
     display: flex;
